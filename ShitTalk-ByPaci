@@ -1,19 +1,19 @@
 --Load Notification
 game.StarterGui:SetCore("SendNotification", {
-    Title = "🗑️ Shit Talk";
-    Text = "💙 Loaded into Roblox";
+    Title = "Shit Talk";
+    Text = "🔹 Loaded into Roblox 🔹";
     Duration = "5";
     })
 --Keybinds Notification
 game.StarterGui:SetCore("SendNotification", {
-        Title = "🌐 Keybinds";
-    Text = "💻 Press Y To Shit Talk";
+        Title = "Keybinds";
+    Text = "🔹 Press Y To Shit Talk 🔹";
     Duration = "5";
     })
 --Credits Notification
 game.StarterGui:SetCore("SendNotification", {
-    Title = "📘 Credits";
-    Text = "📝 Made By Paci";
+    Title = "Credits";
+    Text = "🔹 Made By Paci 🔹";
     Duration = "5";
     })
 
