@@ -1,0 +1,40 @@
+--Load Notification
+game.StarterGui:SetCore("SendNotification", {
+    Title = "🗑️ Shit Talk";
+    Text = "💙 Loaded into Roblox";
+    Duration = "5";
+    })
+--Keybinds Notification
+game.StarterGui:SetCore("SendNotification", {
+        Title = "🌐 Keybinds";
+    Text = "💻 Press Y To Shit Talk";
+    Duration = "5";
+    })
+--Credits Notification
+game.StarterGui:SetCore("SendNotification", {
+    Title = "📘 Credits";
+    Text = "📝 Made By Paci";
+    Duration = "5";
+    })
+
+--Customizable words
+local words = {
+    'trash',
+    'youre an ai',
+    'quit',
+    'even bots aim better',
+    'sad',
+    'sonned',
+    'how did u fail to get me',
+}
+
+local player = game.Players.LocalPlayer
+local keybind = 'y'
+
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+player:GetMouse().KeyDown:connect(function(key)
+    if key == keybind then
+        event:FireServer(words[math.random(#words)], "All")
+    end
+end)
