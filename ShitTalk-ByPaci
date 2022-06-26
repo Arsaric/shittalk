@@ -13,9 +13,11 @@ game.StarterGui:SetCore("SendNotification", {
 --Credits Notification
 game.StarterGui:SetCore("SendNotification", {
     Title = "Credits";
-    Text = "🔹 Made By Paci 🔹";
+    Text = "🔹 Paci (dc copied to clipboard) 🔹";
     Duration = "5";
     })
+
+setclipboard("paci#5673")
 
 --Customizable words
 local words = {
